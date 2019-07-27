@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReviewQuestions"
+    android:orientation="vertical"
+    android:background="@drawable/questionbackground">
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:src="@drawable/back" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="REVIEW YOUR QUESTIONS"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="#a92b2a2a"
+        android:layout_width="match_parent"
+        android:layout_height="1.3dp"/>
+<LinearLayout
+    android:background="@drawable/cbackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/reviewrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+</LinearLayout>

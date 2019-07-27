@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shaurya.database">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/quiz1"
+        android:label="Quiz App"
+        android:roundIcon="@drawable/quiz1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Quiz" />
+        <activity android:name=".Database" />
+        <activity android:name=".ReviewQuestions" />
+        <activity android:name=".ScoreCard" />
+    <activity android:name=".LandingPage"/>
+        <activity android:name=".UpdateQuestion">
+        </activity>
+    </application>
+
+</manifest>
